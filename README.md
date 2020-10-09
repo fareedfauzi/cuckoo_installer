@@ -4,9 +4,9 @@
 
 Limited error and input checking, use at your own risk!
 
-0. sudo apt install curl net-tools git openssh-server
+0. `sudo apt install curl net-tools git openssh-server`
 
-1. git clone https://github.com/benrau87/cuckoo_installer.git
+1. `git clone https://github.com/benrau87/cuckoo_installer.git`
 
 2. Chmod +x and run the setup.sh
 
