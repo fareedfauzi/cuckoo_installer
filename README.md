@@ -12,12 +12,8 @@ Limited error and input checking, use at your own risk!
 
 3. Reboot and login to your cuckoo user
 
-4. Create some VM templates using the vmcloak.sh script in your home directory, you will need a local copy of a Windows ISO.
+4. Create some VM templates using the vmcloak.sh script in your home directory (`sudo ./vmcloak.sh`), you will need a local copy of a Windows ISO. (`wget https://archive.org/download/en_windows_7_ultimate_x64_dvd_201905/en_windows_7_ultimate_x64_dvd.iso -P /mnt/windows_ISO`)
 
-`sudo ./vmcloak.sh`
-
-In the other tab.
-`wget https://archive.org/download/en_windows_7_ultimate_x64_dvd_201905/en_windows_7_ultimate_x64_dvd.iso -P /mnt/windows_ISO`
 
 OVAs will be placed in the home directory for your Cuckoo user with golden.ova appended to the name you supply.
 
