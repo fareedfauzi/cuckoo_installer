@@ -4,14 +4,18 @@
 
 Limited error and input checking, use at your own risk!
 
-Chmod +x and run the setup.sh
+0. sudo apt install curl net-tools git openssh-server
 
-Reboot and login to your cuckoo user
+1. git clone https://github.com/benrau87/cuckoo_installer.git
 
-Create some VM templates using the vmcloak.sh script in your home directory, you will need a local copy of a Windows ISO.
+2. Chmod +x and run the setup.sh
+
+3. Reboot and login to your cuckoo user
+
+4. Create some VM templates using the vmcloak.sh script in your home directory, you will need a local copy of a Windows ISO.
 OVAs will be placed in the home directory for your Cuckoo user with golden.ova appended to the name you supply.
 
-After that you can import them to virtualbox with the import_ova.sh, VMs created this way will be hardened against
+5. After that you can import them to virtualbox with the import_ova.sh, VMs created this way will be hardened against
 some anti-vm defenses and have many default applications installed. You will need to manually assign an IP address 
 in the 192.168.56.0/24 range for each machine. The import_ova.sh script will boot the machines with RDP support which 
 will allow you to connect and make any changes and install apps as needed before taking a snapshot.
@@ -20,9 +24,9 @@ When creating a Windows VM, you want to disable Windows updates and firewall. Us
 
 Machines added with the import_ova.sh script will also be added to your conf files for immediate use after running restart_cuckoo.sh
 
-Start cuckoo with the restart_cuckoo.sh script on your cuckoo user in their home directory
+6. Start cuckoo with the restart_cuckoo.sh script on your cuckoo user in their home directory
 
-Open your browser and point it at your host IP:8000
+7. Open your browser and point it at your host IP:8000
 
 FIN
 
